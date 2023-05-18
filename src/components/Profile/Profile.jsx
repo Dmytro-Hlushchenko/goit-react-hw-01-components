@@ -1,4 +1,6 @@
-export default function Profile({username, tag, location, avatar, stats}) { 
+import PropTypes, { number } from 'prop-types';
+
+export default function Profile({ username, tag, location, avatar, stats }) { 
     return (
     <div className="profile">
         <div className="description">
@@ -27,4 +29,12 @@ export default function Profile({username, tag, location, avatar, stats}) {
             </li>
         </ul>
     </div> );
+}
+
+Profile.propTypes = {
+    username: PropTypes.string,
+    //tag: props @
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.objectOf(PropTypes.number),
 }
