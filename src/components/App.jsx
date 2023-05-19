@@ -1,6 +1,6 @@
 import Profile from "./Profile";
 import Statistics from "./Statistics";
-import data from "../data/statistics.json"
+import data from "../data/statistics.json";
 import user from "../data/user.json";
 
 export const App = () => {
@@ -13,14 +13,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <section className="statistics">
-        <h2 class="title">Upload stats</h2>
-          <ul className="stat-list">
-              {data.map(item => {
-                return <Statistics stats={item}/>
-              })}
-          </ul>
-      </section>
+      <Statistics title={data.title} stats={data} />
     </>
     )
 }; 
