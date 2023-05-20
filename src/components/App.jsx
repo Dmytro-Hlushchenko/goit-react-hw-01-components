@@ -4,7 +4,8 @@ import data from "../data/statistics.json";
 import user from "../data/user.json";
 import friends from "../data/friends.json";
 import FriendList from "../components/FriendList";
-// import FriendListItem from "./FriendListItem";
+import items from "../data/transactions.json"
+import TransactionHistory from "./TransactionHistory/";
 
 export default () => {
   return (
@@ -16,7 +17,8 @@ export default () => {
         avatar={user.avatar}
         stats={user.stats} />
       <Statistics title={data.title} stats={data} />
-      <FriendList friends={friends}/>
+      <FriendList friends={friends} />
+      <TransactionHistory items={items}/>
 </>
   );
 }; 
