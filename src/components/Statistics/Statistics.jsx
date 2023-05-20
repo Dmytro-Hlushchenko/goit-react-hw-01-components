@@ -1,4 +1,4 @@
-import PropTypes, { number } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function Statistics({ title="Upload stats", stats}) {
     return (
@@ -19,3 +19,7 @@ export default function Statistics({ title="Upload stats", stats}) {
             </>
             )
 };
+
+Statistics.propTypes = { 
+    stats: PropTypes.PropTypes.arrayOf(PropTypes.object)
+}  

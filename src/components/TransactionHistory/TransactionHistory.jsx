@@ -1,4 +1,5 @@
 import Transaction from "components/Transaction/"
+import PropTypes from 'prop-types';
 
 export default function TransactionHistory({items}) { 
     return (
@@ -16,4 +17,8 @@ export default function TransactionHistory({items}) {
             </tbody>
         </table>
             )
+}
+
+TransactionHistory.propTypes = { 
+    items: PropTypes.PropTypes.arrayOf(PropTypes.object)
 }

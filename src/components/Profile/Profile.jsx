@@ -1,4 +1,4 @@
-import PropTypes, { number } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
     return (
@@ -33,7 +33,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
 
 Profile.propTypes = {
     username: PropTypes.string,
-    //tag: props @
+    tag: PropTypes.string,
     location: PropTypes.string,
     avatar: PropTypes.string,
     stats: PropTypes.objectOf(PropTypes.number),
