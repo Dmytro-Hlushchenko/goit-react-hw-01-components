@@ -1,6 +1,6 @@
 import PropTypes, { number } from 'prop-types';
 
-export default function Statistics({ title="Upload stats", stats }) {
+export default function Statistics({ title="Upload stats", stats}) {
     return (
             <>
             <section className="statistics">
@@ -8,7 +8,7 @@ export default function Statistics({ title="Upload stats", stats }) {
                 <ul className="stat-list">
                     {stats.map(item => { 
                         return (
-                        <li className="item">
+                        <li className="item" key={item.id}>
                             <span className="label">{item.label}</span>
                             <span className="percentage"> {item.percentage}%</span>
                         </li>
