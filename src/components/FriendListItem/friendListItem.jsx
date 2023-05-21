@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 export default function FriendListItem({avatar, name, isOnline, id}) {
-    {
+    
         return (
             <li className="item">
                 {isOnline&&(console.log("!!!!!!!!"))}
@@ -9,7 +9,6 @@ export default function FriendListItem({avatar, name, isOnline, id}) {
                     <p className="name">{name}</p>
             </li>
             )
-}
 }
 
 FriendListItem.propTypes = { 
