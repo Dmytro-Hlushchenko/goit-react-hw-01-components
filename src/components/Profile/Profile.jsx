@@ -10,7 +10,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
                 <UnderPhoto>{location}</UnderPhoto>
         </Description>
 
-        <Stats className="stats">
+        <Stats>
             <li>
                 <Label>Followers: </Label>
                 <Quantity>{stats.followers}</Quantity>

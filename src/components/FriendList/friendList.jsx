@@ -10,7 +10,7 @@ export default function FriendList({ friends }) {
                     avatar={item.avatar}
                     name={item.name}
                     isOnline={item.isOnline}
-                    id={item.id} />
+                    />
                 )
             })}    
         </ul>
