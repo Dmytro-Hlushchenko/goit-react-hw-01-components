@@ -9,10 +9,10 @@ export default function Statistics({ title, stats}) {
                 <StatList>
                     {stats.map(item => { 
                         return (
-                            <StatItem color={getRandomColor()}>
+                            <StatItem key={item.id} color={getRandomColor()}>
                             <span className="label">{item.label}</span>
                             <span className="percentage"> {item.percentage}%</span>
-                        </StatItem>
+                            </StatItem>
                         )
                     })}
                 </StatList>
