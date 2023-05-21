@@ -7,7 +7,7 @@ import FriendList from "../components/FriendList";
 import items from "../data/transactions.json"
 import TransactionHistory from "./TransactionHistory/";
 
-export default () => {
+export default function App () {
   return (
     <>
       <Profile
