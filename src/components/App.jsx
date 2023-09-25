@@ -1,11 +1,13 @@
-import Profile from "./Profile";
-import Statistics from "./Statistics";
 import data from "../data/statistics.json";
 import user from "../data/user.json";
 import friends from "../data/friends.json";
-import FriendList from "../components/FriendList";
 import items from "../data/transactions.json"
+
+import Profile from "./Profile";
+import Statistics from "./Statistics";
+import FriendList from "../components/FriendList";
 import TransactionHistory from "./TransactionHistory/";
+
 
 export default function App () {
   return (
@@ -19,6 +21,6 @@ export default function App () {
       <Statistics title={data.title} stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={items}/>
-</>
+    </>
   );
 }; 
