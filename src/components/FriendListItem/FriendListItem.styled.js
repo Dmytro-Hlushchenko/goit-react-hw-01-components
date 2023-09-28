@@ -11,7 +11,7 @@ export const FriendItem = styled.li`
     border-color: black;
 `
 
-export const Status = styled.span`
+export const Status = styled.div`
     background-color: ${(props) => (props.isOnline && "green")};
     width: 15px;
     height: 15px;
