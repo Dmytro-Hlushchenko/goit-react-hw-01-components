@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { StatisticsContainer, StatList, StatItem } from './Statistics.styled';
-import getRandomColor from '../Helpers/getRandom';
+import getRandomColor from 'components/Helpers/getRandom';
 
 export default function Statistics({ title, stats}) {
     return (
-            <>
+            <> 
             <StatisticsContainer>
                 {title && (<h2 className="title">{title}</h2>)}
                 <StatList>
