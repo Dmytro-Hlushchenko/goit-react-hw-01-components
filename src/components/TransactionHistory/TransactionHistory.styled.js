@@ -9,12 +9,15 @@ export const Table = styled.table`
 `
 
 export const Head = styled.thead`
-background-color: aqua;
-`
+background-color: aqua;`
 
-export const Transaction = styled.tr`
-    background-color: ${(props) => { return props.color }};
+export const Tbody = styled.tbody`
+tr:nth-child(odd) {
+  background-color: grey;
+}
 `
+export const Transaction = styled.tr`   
 
+`
 export const Td = styled.td`
 `

@@ -12,9 +12,8 @@ export const FriendItem = styled.li`
 `
 
 export const Status = styled.div`
-    background-color: ${(props) => (props.isOnline && "green")};
+    background-color: ${(props) => (props.isOnline ? "green": "red")};
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    
 `
