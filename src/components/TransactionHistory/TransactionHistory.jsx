@@ -29,4 +29,4 @@ export default function TransactionHistory({items}) {
 
 TransactionHistory.propTypes = { 
     items: PropTypes.PropTypes.arrayOf(PropTypes.object).isRequired
-}
+};
