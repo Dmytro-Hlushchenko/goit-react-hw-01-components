@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatisticsContainer, StatList, StatItem } from './Statistics.styled';
-import { getRandomColor } from '../Helpers/getRandomColor'
+import getRandomColor from '../Helpers/getRandomColor'
 
 export default function Statistics({ title, stats}) {
     return (
